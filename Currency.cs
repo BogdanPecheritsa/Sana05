@@ -8,8 +8,8 @@ namespace Sana05
 {
     public class Currency
     {
-        protected string Name;
-        protected double ExRate;
+        public string Name { get; set; }
+        public double ExRate { get; set; }
 
         public Currency() { }
 

@@ -8,10 +8,10 @@ namespace Sana05
 {
     public class Airplane
     {
-        protected string StartCity;
-        protected string FinishCity;
-        protected MyDate StartDate;
-        protected MyDate FinishDate;
+        public string StartCity { get; set; }
+        public string FinishCity { get; set; }
+        public MyDate StartDate { get; set; }
+        public MyDate FinishDate { get; set; }
 
         public Airplane() { }
         public Airplane(Airplane airplane) { }
@@ -46,4 +46,3 @@ namespace Sana05
         }
     }
 }
-

@@ -11,12 +11,12 @@ namespace Sana05
 {
     public class Product
     {
-        protected string Name;
-        protected double Price;
-        protected Currency Cost;
-        protected int Quantity;
-        protected string Producer;
-        protected double Weight;
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public Currency Cost { get; set; }
+        public int Quantity { get; set; }
+        public string Producer { get; set; }
+        public double Weight { get; set; }
 
         public Product() { }
 
