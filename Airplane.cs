@@ -13,7 +13,28 @@ namespace Sana05
         protected MyDate StartDate;
         protected MyDate FinishDate;
 
+        public Airplane() { }
+        public Airplane(Airplane airplane) { }
 
+        public Airplane(string startCity, string finishCity, MyDate startDate, MyDate finishDate)
+        {
+            StartCity = startCity;
+            FinishCity = finishCity;
+            StartDate = startDate;
+            FinishDate = finishDate;
+        }
+
+        public Airplane(MyDate startDate, MyDate finishDate) 
+        {
+            StartDate = startDate;
+            FinishDate = finishDate;
+        }
+
+        public Airplane(string startCity, string finishCity)
+        {
+            StartCity = startCity;
+            FinishCity = finishCity;
+        }
 
         public void GetTotalTime()
         {

@@ -17,6 +17,35 @@ namespace Sana05
         protected int Quantity;
         protected string Producer;
         protected double Weight;
+
+        public Product() { }
+
+        public Product(Product product) { }
+
+        public Product (string name, double price, Currency cost, int quantity, string producer, double weight)
+        {
+            Name = name;
+            Price = price;
+            Cost = cost;
+            Quantity = quantity;
+            Producer = producer;
+            Weight = weight;
+        }
+
+        public Product(string name, double price, Currency cost) 
+        { 
+            Name = name;
+            Price = price;
+            Cost = cost;
+        }
+
+        public Product(int quantity, string producer, double weight) 
+        { 
+            Quantity = quantity;
+            Producer = producer;
+            Weight = weight;
+        }
+
         public double GetPriceInUAH()
         {
             return Price;
