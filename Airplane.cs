@@ -38,8 +38,10 @@ namespace Sana05
 
         public int GetTotalTime()
         {
-            return FinishDate.Day * 24 * 60 + FinishDate.Hours * 60 + FinishDate.Minutes -
-          StartDate.Day * 24 * 60 + StartDate.Hours * 60 + StartDate.Minutes;
+            return (FinishDate.Year * 365 * 24 * 60 + FinishDate.Month * 30 * 24 * 60 + 
+                FinishDate.Day * 24 * 60 + FinishDate.Hours * 60 + FinishDate.Minutes) -
+           (StartDate.Year * 365 * 24 * 60 + StartDate.Month * 30 * 24 * 60 + 
+           StartDate.Day * 24 * 60 + StartDate.Hours * 60 + StartDate.Minutes);
         }
 
         public bool IsArrivingToday()
