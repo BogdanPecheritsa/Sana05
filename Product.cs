@@ -20,7 +20,15 @@ namespace Sana05
 
         public Product() { }
 
-        public Product(Product product) { }
+        public Product(Product product) 
+        { 
+            Name = product.Name;
+            Price = product.Price;
+            Cost = product.Cost;
+            Quantity = product.Quantity;
+            Producer = product.Producer;
+            Weight = product.Weight;
+        }
 
         public Product (string name, double price, Currency cost, int quantity, string producer, double weight)
         {

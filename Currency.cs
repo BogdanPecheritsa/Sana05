@@ -13,7 +13,11 @@ namespace Sana05
 
         public Currency() { }
 
-        public Currency(Currency currency) { }
+        public Currency(Currency currency) 
+        { 
+            Name = currency.Name;
+            ExRate = currency.ExRate;
+        }
 
         public Currency(string name, double exRate)
         {

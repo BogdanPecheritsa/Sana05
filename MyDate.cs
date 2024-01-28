@@ -16,7 +16,14 @@ namespace Sana05
 
         public MyDate() { }
 
-        public MyDate(MyDate myDate) { }
+        public MyDate(MyDate myDate) 
+        { 
+            Year = myDate.Year;
+            Month = myDate.Month;
+            Day = myDate.Day;
+            Hours = myDate.Hours;
+            Minutes = myDate.Minutes;
+        }
 
         public MyDate(int year, int month, int day, int hours, int minutes)
         {

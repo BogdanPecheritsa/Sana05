@@ -14,7 +14,13 @@ namespace Sana05
         public MyDate FinishDate { get; set; }
 
         public Airplane() { }
-        public Airplane(Airplane airplane) { }
+        public Airplane(Airplane airplane) 
+        {
+            StartCity = airplane.StartCity;
+            FinishCity = airplane.FinishCity;
+            StartDate = new MyDate(airplane.StartDate);
+            FinishDate = new MyDate(airplane.FinishDate);
+        }
 
         public Airplane(string startCity, string finishCity, MyDate startDate, MyDate finishDate)
         {
