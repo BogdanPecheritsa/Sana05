@@ -44,7 +44,9 @@ namespace Sana05
 
         public bool IsArrivingToday()
         {
-            return GetTotalTime() == 0;
+            return FinishDate.Year == StartDate.Year &&
+               FinishDate.Month == StartDate.Month &&
+               FinishDate.Day == StartDate.Day;
         }
     }
 }
