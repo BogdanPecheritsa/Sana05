@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sana05
 {
-    internal class MyDate
+    public class MyDate
     {
         protected int Year;
         protected int Month;

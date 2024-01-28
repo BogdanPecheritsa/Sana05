@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Sana05
 {
-    internal class Airplane
+    public class Airplane
     {
         protected string StartCity;
         protected string FinishCity;
         protected MyDate StartDate;
         protected MyDate FinishDate;
+
+
 
         public void GetTotalTime()
         {
