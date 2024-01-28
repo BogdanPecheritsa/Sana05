@@ -24,7 +24,7 @@ namespace Sana05
             FinishDate = finishDate;
         }
 
-        public Airplane(MyDate startDate, MyDate finishDate) 
+        public Airplane(MyDate startDate, MyDate finishDate)
         {
             StartDate = startDate;
             FinishDate = finishDate;
@@ -36,13 +36,15 @@ namespace Sana05
             FinishCity = finishCity;
         }
 
-        public void GetTotalTime()
+        public int GetTotalTime()
         {
+            return FinishDate.Day * 24 * 60 + FinishDate.Hours * 60 + FinishDate.Minutes -
+          StartDate.Day * 24 * 60 + StartDate.Hours * 60 + StartDate.Minutes;
         }
 
         public bool IsArrivingToday()
-        { 
-            return true; 
+        {
+            return GetTotalTime() == 0;
         }
     }
 }

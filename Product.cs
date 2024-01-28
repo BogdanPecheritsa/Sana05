@@ -48,17 +48,15 @@ namespace Sana05
 
         public double GetPriceInUAH()
         {
-            return Price;
+            return Price * Cost.ExRate;
         }
-        public double GetTotalPriceInUAH() 
+        public double GetTotalPriceInUAH()
         {
-            double totalPrice = 0;
-            return totalPrice;
+            return Quantity * GetPriceInUAH();
         }
         public double GetTotalWeight()
         {
-            double totalWeight = 0;
-            return totalWeight;
+            return Quantity * Weight;
         }
     }
 }
